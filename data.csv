@@ -1,129 +1,53 @@
-autorizaciones?allowPublicKeyRetrieval=true
+## autorizaciones?allowPublicKeyRetrieval=true
 
 INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(14, 'Jose Lopez', '2025-05-20 08:00:00', '2025-05-09 14:30:00', 'Paciente con dolor abdominal persistente.', 'Apendicitis');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(15, 'Ana Martinez', '2025-05-22 08:30:00', '2025-05-10 09:00:00', 'Dolor e inflamación en ingle derecha.', 'Hernia Inguinal');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(16, 'Valentina Ruiz', '2025-05-23 09:00:00', '2025-05-11 11:00:00', 'Masa subcutánea benigna.', 'Lipoma');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(17, 'Martina Dominguez', '2025-05-24 10:30:00', '2025-05-12 12:00:00', 'Supuración anal crónica.', 'Fístula anal');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(18, 'Diego Torres', '2025-05-25 12:00:00', '2025-05-13 13:00:00', 'Inflamación escrotal con líquido.', 'Hidrocele');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(19, 'Emanuel Castro', '2025-05-26 13:00:00', '2025-05-14 14:00:00', 'Dolor abdominal central.', 'Hernia epigástrica');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(20, 'Camila Ortiz', '2025-05-27 14:00:00', '2025-05-15 15:00:00', 'Cálculos en vesícula.', 'Colelitiasis');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(21, 'Juan Rojas', '2025-05-28 15:00:00', '2025-05-16 16:00:00', 'Dolor y secreción sacra.', 'Quiste pilonidal');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(22, 'Sofia Perez', '2025-05-29 16:00:00', '2025-05-17 17:00:00', 'Inflamación aguda de vesícula.', 'Colecistitis');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(23, 'Lucia Gomez', '2025-05-30 17:00:00', '2025-05-18 18:00:00', 'Dolor abdominal inferior derecho.', 'Apendicitis aguda');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(24, 'Carlos Gutierrez', '2025-05-31 08:30:00', '2025-05-19 10:00:00', 'Hernia postoperatoria.', 'Eventración');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(25, 'Pedro Alvarez', '2025-06-01 09:00:00', '2025-05-20 11:00:00', 'Protrusión umbilical.', 'Hernia umbilical');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(26, 'Nicolas Ibarra', '2025-06-02 10:00:00', '2025-05-21 12:00:00', 'Cálculos e inflamación de vesícula.', 'Colecistitis');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(27, 'Tamara Vega', '2025-06-03 11:00:00', '2025-05-22 13:00:00', 'Masa en zona lumbar.', 'Lipoma dorsal');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(28, 'Roberto Medina', '2025-06-04 12:00:00', '2025-05-23 14:00:00', 'Quiste en cuero cabelludo.', 'Quiste sebáceo');
-INSERT INTO autorizaciones.solicitud
-(id_solicitud, beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
-VALUES(29, 'Sebastián Blanco', '2025-06-05 13:00:00', '2025-05-24 15:00:00', 'Supuración crónica.', 'Fístula perianal');
+(beneficiario, fecha_cirugia, fecha_creacion, observacion, patologia)
+VALUES
+('Jose Lopez', '2025-05-20 08:00:00', '2025-05-09 14:30:00', 'Paciente con dolor abdominal persistente.', 'Apendicitis'),
+('Ana Martinez', '2025-05-22 08:30:00', '2025-05-10 09:00:00', 'Dolor e inflamación en ingle derecha.', 'Hernia Inguinal'),
+('Valentina Ruiz', '2025-05-23 09:00:00', '2025-05-11 11:00:00', 'Masa subcutánea benigna.', 'Lipoma'),
+('Martina Dominguez', '2025-05-24 10:30:00', '2025-05-12 12:00:00', 'Supuración anal crónica.', 'Fístula anal'),
+('Diego Torres', '2025-05-25 12:00:00', '2025-05-13 13:00:00', 'Inflamación escrotal con líquido.', 'Hidrocele'),
+('Emanuel Castro', '2025-05-26 13:00:00', '2025-05-14 14:00:00', 'Dolor abdominal central.', 'Hernia epigástrica'),
+('Camila Ortiz', '2025-05-27 14:00:00', '2025-05-15 15:00:00', 'Cálculos en vesícula.', 'Colelitiasis'),
+('Juan Rojas', '2025-05-28 15:00:00', '2025-05-16 16:00:00', 'Dolor y secreción sacra.', 'Quiste pilonidal'),
+('Sofia Perez', '2025-05-29 16:00:00', '2025-05-17 17:00:00', 'Inflamación aguda de vesícula.', 'Colecistitis'),
+('Lucia Gomez', '2025-05-30 17:00:00', '2025-05-18 18:00:00', 'Dolor abdominal inferior derecho.', 'Apendicitis aguda'),
+('Carlos Gutierrez', '2025-05-31 08:30:00', '2025-05-19 10:00:00', 'Hernia postoperatoria.', 'Eventración'),
+('Pedro Alvarez', '2025-06-01 09:00:00', '2025-05-20 11:00:00', 'Protrusión umbilical.', 'Hernia umbilical'),
+('Nicolas Ibarra', '2025-06-02 10:00:00', '2025-05-21 12:00:00', 'Cálculos e inflamación de vesícula.', 'Colecistitis'),
+('Tamara Vega', '2025-06-03 11:00:00', '2025-05-22 13:00:00', 'Masa en zona lumbar.', 'Lipoma dorsal'),
+('Roberto Medina', '2025-06-04 12:00:00', '2025-05-23 14:00:00', 'Quiste en cuero cabelludo.', 'Quiste sebáceo'),
+('Sebastián Blanco', '2025-06-05 13:00:00', '2025-05-24 15:00:00', 'Supuración crónica.', 'Fístula perianal');
+
+###
 
 INSERT INTO autorizaciones.requerimiento
 (numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 14, 2, 'Tubo gastrico', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 15, 1, 'Malla quirúrgica', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 16, 1, 'Bisturí descartable', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 17, 1, 'Set quirúrgico menor', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 18, 1, 'Sonda Foley', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 19, 1, 'Malla de polipropileno', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 20, 1, 'Trocar laparoscópico', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 21, 1, 'Compresas estériles', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 22, 1, 'Clip hemostático', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 23, 1, 'Set apendicectomía', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 24, 1, 'Malla grande', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 25, 1, 'Malla umbilical', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 26, 1, 'Trocar 10mm', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 27, 1, 'Anestesia local', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 28, 1, 'Bisturí n°11', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(1, 29, 2, 'Anestesia regional', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(2, 24, 2, 'Sutura no absorbible', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(2, 25, 1, 'Gasas estériles', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(2, 26, 1, 'Trocar 5mm', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(2, 27, 1, 'Bisturí descartable', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(2, 28, 1, 'Campo estéril', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(2, 29, 1, 'Set quirúrgico menor', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(3, 26, 1, 'Sistema de aspiración', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(3, 27, 1, 'Jeringa 10ml', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(3, 28, 1, 'Sutura absorbible', 'INICIADO');
-INSERT INTO autorizaciones.requerimiento
-(numero, solicitud, cantidad, descripcion, estado)
-VALUES(3, 29, 1, 'Compresas', 'INICIADO');
+VALUES
+(1, 1, 2, 'Tubo gastrico', 'INICIADO'),
+(1, 2, 1, 'Malla quirúrgica', 'INICIADO'),
+(1, 3, 1, 'Bisturí descartable', 'INICIADO'),
+(1, 4, 1, 'Set quirúrgico menor', 'INICIADO'),
+(1, 5, 1, 'Sonda Foley', 'INICIADO'),
+(1, 6, 1, 'Malla de polipropileno', 'INICIADO'),
+(1, 7, 1, 'Trocar laparoscópico', 'INICIADO'),
+(1, 8, 1, 'Compresas estériles', 'INICIADO'),
+(1, 9, 1, 'Clip hemostático', 'INICIADO'),
+(1, 10, 1, 'Set apendicectomía', 'INICIADO'),
+(1, 11, 1, 'Malla grande', 'INICIADO'),
+(1, 12, 1, 'Malla umbilical', 'INICIADO'),
+(1, 13, 1, 'Trocar 10mm', 'INICIADO'),
+(1, 14, 1, 'Anestesia local', 'INICIADO'),
+(1, 15, 1, 'Bisturí n°11', 'INICIADO'),
+(1, 16, 2, 'Anestesia regional', 'INICIADO'),
+(2, 13, 2, 'Sutura no absorbible', 'INICIADO'),
+(2, 14, 1, 'Gasas estériles', 'INICIADO'),
+(2, 15, 1, 'Trocar 5mm', 'INICIADO'),
+(2, 16, 1, 'Bisturí descartable', 'INICIADO'),
+(2, 12, 1, 'Campo estéril', 'INICIADO'),
+(2, 11, 1, 'Set quirúrgico menor', 'INICIADO'),
+(3, 13, 1, 'Sistema de aspiración', 'INICIADO'),
+(3, 14, 1, 'Jeringa 10ml', 'INICIADO'),
+(3, 15, 1, 'Sutura absorbible', 'INICIADO'),
+(3, 16, 1, 'Compresas', 'INICIADO');
