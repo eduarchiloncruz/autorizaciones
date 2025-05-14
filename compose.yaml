@@ -9,13 +9,12 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: 0000
-      MYSQL_DATABASE: autorizaciones
+      MYSQL_DATABASE: autorizaciones?allowPublicKeyRetrieval=true
       MYSQL_USER: test
       MYSQL_PASSWORD: test
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./mysql-init:/docker-entrypoint-initdb.d # datos cargados
 
 volumes:
   mysql_data:
