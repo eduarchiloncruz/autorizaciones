@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "2a757015-c07b-4365-8305-35c7be2f2c94",
+		"name": "autorizaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44197895"
+	},
+	"item": [
+		{
+			"name": "requerimiento",
+			"item": [
+				{
+					"name": "changeEstadoRequerimiento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"FINALIZADO\"",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/requerimiento/1/1"
+					},
+					"response": []
+				},
+				{
+					"name": "getRequerimientosByIdSolicitudAndNumero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/requerimiento/1/1"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllRequerimientos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:8080/api/requerimiento/all"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "solicitud",
+			"item": [
+				{
+					"name": "createAutorizacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"solicitud\": {\n      \"patologia\": \"Fístula perianal\",\n      \"fechaCreacion\": \"24/05/2025 15:00:00.000\",\n      \"fechaCirugia\": \"05/06/2025 13:00:00.000\",\n      \"observacion\": \"Supuración crónica.\",\n      \"beneficiario\": \"Sebastián Blanco\"\n    },\n    \"requerimientos\": [\n      {\n        \"numero\": \"ddd\",\n        \"cantidad\": \"dsddd\",\n        \"descripcion\": \"Anestesia regional\",\n        \"estado\": \"INICIADO\"\n      }\n    ]\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/solicitud/new"
+					},
+					"response": []
+				},
+				{
+					"name": "getSolicitud",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/solicitud/199"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllSolicitud",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/solicitud"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSolicitud",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/solicitud/30"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
