@@ -3,18 +3,17 @@ version: '3.8'
 services:
   mysql:
     image: mysql:8.0
-    container_name: mysql-container
-    restart: always
-    ports:
-      - "3306:3306"
+    container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: 0000
-      MYSQL_DATABASE: autorizaciones?allowPublicKeyRetrieval=true
+      MYSQL_DATABASE: autorizaciones
       MYSQL_USER: test
       MYSQL_PASSWORD: test
-    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
     volumes:
-      - mysql_data:/var/lib/mysql
+      - mysql-data:/var/lib/mysql
 
 volumes:
-  mysql_data:
+  mysql-data:
+    driver: local
